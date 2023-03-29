@@ -1,2 +1,1 @@
-# Xircus Examples
-
+# Xircus Web3 App Example Templates
