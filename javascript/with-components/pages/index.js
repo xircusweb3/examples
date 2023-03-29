@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { ChangeNetwork, ConnectModal, DisconnectButton, Wallet } from '@xircus-web3/components'
-import { Box, Container, Heading, VStack } from '@chakra-ui/react'
+import { Container, Heading, VStack, Box } from '@chakra-ui/react'
+import { ChangeNetwork, ConnectModal, DisconnectButton, Wallet } from "@xircus-web3/components"
 
 export default function Home() {
   return (
@@ -9,18 +9,16 @@ export default function Home() {
         <title>Xircus | with Components</title>
         <meta name="description" content="Template created by Xircus" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head>    
       <Container>
         <VStack h="100vh" justify="center">
-          <Heading>Xircus with Components</Heading>
+          <Heading>with Xircus Components</Heading>
           <ConnectModal>
             <Wallet />
-            <DisconnectButton>Disconnect</DisconnectButton>
             <ChangeNetwork maxW="300px" />
-            <Box>
-              This is a wallet gated content
-            </Box>
-          </ConnectModal>
+            <DisconnectButton>Disconnect</DisconnectButton>
+            <Box>This is a wallet gated content</Box>
+          </ConnectModal>      
         </VStack>
       </Container>
     </>
