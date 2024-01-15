@@ -1,0 +1,21 @@
+{
+  "name": "dust-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@xircus-web3/dust": "^0.1.14",
+    "@xircus-web3/dust-chakra": "^0.1.10",
+    "@xircus-web3/dust-chakra-ton": "^0.1.6",
+    "@xircus-web3/react": "^1.1.77",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.0.1"
+  }
+}
