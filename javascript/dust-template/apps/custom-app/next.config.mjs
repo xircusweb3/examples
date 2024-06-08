@@ -8,7 +8,7 @@ const nextConfig = {
     '@xircus-web3/dust-chakra-ton',
     '@xircus-web3/ton-react',
     '@xircus-web3/graph-ton',    
-    '@maneki/dust-premium'
+    '@dust/template'
   ]
 };
 

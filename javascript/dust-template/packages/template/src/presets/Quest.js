@@ -1,13 +1,14 @@
 import { createDefsWithKey } from '@xircus-web3/dust'
 import { NAV_DEFS } from '@xircus-web3/dust-chakra-ton'
-import { GUARD_DEFS } from '../blocks-guard';
+import pages from './pages'
 
 export const QuestPreset = {
   appId: '',
   name: 'Quest',
   url: 'quest',
-  ownerAddr: 'UQAoDVyWY8JNOojERBXbm6VYIXGkdlrVSZqqC4lGOo8z9gIt',
-  logo: "QmW97LciiMi119ddBnCwXPACUEF4N7QchXLRkW8drcfHH4",
+  ownerAddr: 'UQAoDVyWY8JNOojERBXbm6VYIXGkdlrVSZqqC4lGOo8z9gIt', // change to your wallet address
+  logo: "QmUdzpZkVQhkogPLA3vBSmGtZ9Sg6G2fnyZnHf7NMKdYbq",
+  pages,
   theme: {
     config: {
       initialColorMode: 'dark',
@@ -26,13 +27,8 @@ export const QuestPreset = {
       }
     }
   },
-  pages: {
-    '/': [
-      createDefsWithKey(GUARD_DEFS.OnboardingGuard)
-    ]
-  },
   layout: {
-    variant: 'ManekiQuestLayout',
+    variant: 'MyCustomLayout', // --- change this layout
     theme: {
       wrap: { fontFamily: 'Space Grotesk', _dark: { bg: 'black' } },
       header: {},
@@ -58,6 +54,6 @@ export const QuestPreset = {
     },
   ],
   metas: [
-    { name: "title", content: "Maneki Neko" },
+    { name: "title", content: "My Custom Template" }, // change to your title
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "name": "@maneki/dust-premium",
-  "description": "Maneki Neko Premium DUST built on Xircus powered by TON",
+  "name": "@dust/template",
+  "description": "Dust Template for Xircus",
   "version": "0.0.0",
   "main": "src/index.js",
   "license": "Apache-2.0",
@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@tanstack/react-virtual": "^3.5.0",
-    "@xircus-web3/dust": "^0.1.47",
-    "@xircus-web3/dust-chakra": "^0.1.50",
-    "@xircus-web3/dust-chakra-common": "^0.1.103",
-    "@xircus-web3/dust-chakra-ton": "^0.1.127",
+    "@xircus-web3/dust": "^0.1.49",
+    "@xircus-web3/dust-chakra": "^0.1.54",
+    "@xircus-web3/dust-chakra-common": "^0.1.107",
+    "@xircus-web3/dust-chakra-ton": "^0.1.132",
     "@xircus-web3/react": "*",
-    "@xircus-web3/ton-react": "^1.0.72",
+    "@xircus-web3/ton-react": "^1.0.76",
     "boring-avatars": "^1.7.0",
     "millify": "^6.1.0",
     "numeral": "^2.0.6"

@@ -1,3 +1,3 @@
 export * from './layouts'
-export * from './blocks-guard'
+export * from './blocks'
 export * from './presets'

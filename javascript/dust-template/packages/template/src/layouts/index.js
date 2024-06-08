@@ -1,5 +1,5 @@
-import { ManekiQuestLayout } from './ManekiQuestLayout'
+import { MyCustomLayout } from './MyCustomLayout'
 
 export const LAYOUTS = {
-  ManekiQuestLayout: <ManekiQuestLayout />  
+  MyCustomLayout: <MyCustomLayout />,
 }
