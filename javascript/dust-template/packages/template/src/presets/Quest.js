@@ -1,6 +1,7 @@
 import { createDefsWithKey } from '@xircus-web3/dust'
 import { NAV_DEFS } from '@xircus-web3/dust-chakra-ton'
 import pages from './pages'
+import theme from './theme'
 
 export const QuestPreset = {
   appId: '',
@@ -9,24 +10,7 @@ export const QuestPreset = {
   ownerAddr: 'UQAoDVyWY8JNOojERBXbm6VYIXGkdlrVSZqqC4lGOo8z9gIt', // change to your wallet address
   logo: "QmUdzpZkVQhkogPLA3vBSmGtZ9Sg6G2fnyZnHf7NMKdYbq",
   pages,
-  theme: {
-    config: {
-      initialColorMode: 'dark',
-      useSystemColorMode: false,
-    },
-    fonts: {
-      heading: 'Space Grotesk',
-      body: 'Space Grotesk'
-    },
-    colors: {
-      gray: {
-
-      },
-      brand: {
-
-      }
-    }
-  },
+  theme,
   layout: {
     variant: 'MyCustomLayout', // --- change this layout
     theme: {
