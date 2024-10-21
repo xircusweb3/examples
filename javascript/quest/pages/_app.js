@@ -2,7 +2,6 @@ import Script from "next/script";
 import { Box, ChakraProvider, Spinner } from "@chakra-ui/react";
 import { MakiProvider, useInitApp } from "@xw3/maki";
 import theme from "@/theme";
-import { APP } from "@/constants/app";
 import { TEST_CHAT_DATA } from "@/constants/testData";
 import { XircusLoader } from '@xw3/maki-chakra'
 
@@ -18,7 +17,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <MakiProvider
-      app={IS_PROD ? app : APP}
+      app={app}
       chatData={IS_PROD ? null : TEST_CHAT_DATA}      
       gram={gram}
       router={router} 

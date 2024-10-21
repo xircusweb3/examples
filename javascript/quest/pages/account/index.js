@@ -1,5 +1,5 @@
 import { AppLayout } from "@/layouts/AppLayout"
-import { Box, Button, Heading } from "@chakra-ui/react"
+import { Heading } from "@chakra-ui/react"
 import { UserAdminButton } from "@xw3/maki-quest"
 
 export default function Account() {
