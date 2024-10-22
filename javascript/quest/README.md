@@ -20,3 +20,28 @@ Modern Web3 Application Kit
 - layouts
 - pages
 - theme
+
+### Initial Setup
+To begin, make sure to configure environment variable
+```
+NEXT_PUBLIC_API_URL=https://quests.xircus.co/YOUR_APP_URL/graph
+```
+
+### Fonts
+Recommended to put them inside the _document.js
+Change the theme/index.js
+
+```
+const fonts = {
+  body: 'FontName',
+  heading: 'FontName',
+  mono: 'FontName'
+}
+
+export default extendTheme({
+  config,
+  styles,
+  components,
+  fonts
+})
+```
