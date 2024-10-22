@@ -7,8 +7,8 @@ export default function Home() {
     <AppLayout>
       <Heading>Home</Heading>
       <VStack>
-        <Heading size="md">Total Points</Heading>
         <Heading size="4xl"><QuestorPoints /></Heading>
+        <Heading size="sm">Total Points</Heading>
       </VStack>
     </AppLayout>
   )
