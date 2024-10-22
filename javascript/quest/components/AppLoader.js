@@ -4,12 +4,12 @@ import { ChakraProvider, Box, Heading, Spinner, Center, HStack, Text, Image, VSt
 export const AppLoader = () => {
   return (
     <ChakraProvider theme={theme}>
-      <Box pos="relative" h="100vh" bgImage="/splash.png" fontWeight="bold" bgSize="cover" bgPos="center center">
+      <Box pos="relative" h="100vh" bgImage="https://placehold.co/1080x1920/000/fff?text=SPLASH" fontWeight="bold" bgSize="cover" bgPos="center center">
         <Center h="100vh">
           <VStack>
             <Box h="50vh" />
             <Image 
-              src="https://placehold.co/1080x1920/000/fff?text=SPLASH"
+              src="https://placehold.co/100x100/000/fff?text=LOGO"
               boxSize={100}
               />
             <HStack>
