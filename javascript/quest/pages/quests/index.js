@@ -1,6 +1,6 @@
 import { AppLayout } from "@/layouts/AppLayout"
 import { Box, Heading, List } from "@chakra-ui/react"
-import { useQuests } from "@xw3/maki-quest"
+import { useQuests } from "@xw3/maki-quest-hooks"
 import Link from "next/link"
 
 export default function Quests() {

@@ -1,39 +1,40 @@
 import { Box } from "@chakra-ui/react"
-import { useChatData, useTelegramChatData, useTelegramLogin } from "@xw3/maki"
-import { GramLayout, FixedFooter, FixedHeader, NavBar } from "@xw3/maki-chakra"
-import { useReferralInvite } from '@xw3/maki-quest'
+import { useTelegramLogin } from "@xw3/maki"
 import { motion } from "framer-motion"
 import { AppHeader } from "./AppHeader"
+import { GramLayout } from "@/components/GramLayout"
+import { FixedHeader } from "@/components/FixedHeader"
+import { FixedFooter } from "@/components/FixedFooter"
+import { NavBar } from "@/components/NavBar"
+import { TbBuildingCircus, TbShoppingBag, TbSparkles, TbUsers } from 'react-icons/tb'
 
 export const AppLayout = ({ children, footer }) => {
   useTelegramLogin()
-  const { chatData } = useTelegramChatData(useChatData())
-  useReferralInvite(chatData)
 
   const navs = [
     {
       key: 'home',
       url: '/',
       label: 'Home',
-      icon: 'TbBuildingCircus'
+      icon: <TbBuildingCircus fontSize={24} />
     },
     {
       key: 'quests',
       url: '/quests',
       label: 'Campaigns',
-      icon: 'TbSparkles'
+      icon: <TbSparkles fontSize={24} />
     },
     {
       key: 'shop',
       url: '/shop',
       label: 'Shop',
-      icon: 'TbShoppingBag'
+      icon: <TbShoppingBag fontSize={24} />
     },       
     {
       key: 'frens',
       url: '/frens',
       label: 'Frens',
-      icon: 'TbUsers'
+      icon: <TbUsers fontSize={24} />
     },
   ]  
 
