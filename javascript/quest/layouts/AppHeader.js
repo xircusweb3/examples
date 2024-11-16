@@ -13,7 +13,7 @@ export const AppHeader = ({ children }) => {
       <Spacer />
       {
         user && (
-          <Link href="/admin">
+          <Link href="/account">
             <HStack variant="ghost" size="sm" gap={2}>
               <Avatar size={24} name={user?._id || ''} variant="beam" />
               <Text fontSize="xs">{user?.name || user?.telegram || user?.username}</Text>
